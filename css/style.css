@@ -348,6 +348,16 @@ ol {
 	margin-top: -35px;
 	padding: 10px 20px;
   }
+
+  .header-area .main-header-area .black_tr_bg_bar {
+	background: #0000009c;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+	margin-top: -35px;
+	padding: 10px 20px;
+  }
   
   @media (max-width: 767px) {
 	/* line 26, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */
@@ -356,6 +366,11 @@ ol {
 	  background: #040E27;
 	  padding: 10px 0;
 	}
+	.header-area .main-header-area .black_tr_bg_bar {
+		margin-top: 0;
+		background: #040E27;
+		padding: 10px 0;
+	  }
   }
   
   @media (min-width: 768px) and (max-width: 991px) {
@@ -365,6 +380,12 @@ ol {
 	  background: #040E27;
 	  padding: 10px 0;
 	}
+	.header-area .main-header-area .black_tr_bg_bar {
+		margin-top: 0;
+		background: #040E27;
+		padding: 10px 0;
+	  }
+	
   }
   
   /* line 43, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */
@@ -562,7 +583,7 @@ ol {
   /* line 178, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu ul li a {
 	font-family: "Aldrich", sans-serif;
-	color: #040E27;
+	color: #fff;
 	font-size: 14px;
 	text-transform: capitalize;
 	font-weight: 500;
@@ -704,7 +725,7 @@ ol {
   
   /* line 276, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */
   .header-area .main-header-area.sticky {
-	box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+	/* box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1); */
 	position: fixed;
 	width: 100%;
 	top: -70px;
@@ -712,10 +733,10 @@ ol {
 	right: 0;
 	z-index: 990;
 	transform: translateY(70px);
-	transition: transform 500ms ease, background 500ms ease;
+	/* transition: transform 500ms ease, background 500ms ease;
 	-webkit-transition: transform 500ms ease, background 500ms ease;
 	box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
-	background: rgba(255, 255, 255, 0.96);
+	background: rgba(255, 255, 255, 0.96); */
   }
   
   @media (max-width: 767px) {
@@ -743,6 +764,14 @@ ol {
   .header-area .main-header-area.sticky .white_bg_bar {
 	margin-top: 0px;
   }
+  .header-area .main-header-area.sticky .black_tr_bg_bar {
+	margin-top: 0px;
+	background: #fff;
+  }
+
+  .header-area .main-header-area.sticky .black_tr_bg_bar ul li a {
+	color: black;
+   }
   
   /* line 313, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */
   .header-area .main-header-area.sticky .header_bottom_border {
@@ -855,9 +884,9 @@ ol {
   
   /* line 397, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */
   .header-area .address_bar {
-	background: rgba(4, 14, 39, 0.5);
-	padding-top: 29px;
-	padding-bottom: 64px;
+	background: rgb(51, 51, 51);
+	padding-top: 10px;
+	padding-bottom: 40px;
   }
   
   /* line 405, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_header.scss */
@@ -2052,6 +2081,7 @@ ol {
 
 .footer__about .footer__logo {
 	margin-bottom: 24px;
+	width: 160px;
 }
 
 .footer__about .footer__logo a {
@@ -2336,6 +2366,7 @@ ol {
 	margin-bottom: 0;
 	font-size: 14px;
 	line-height: 1.4;
+	text-align: justify;
 }
 
 .services__item.bg-1 p{
